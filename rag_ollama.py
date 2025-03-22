@@ -65,8 +65,8 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 PROMPT_TEMPLATE = """
-You are an expert research assistant. Use the provided context to answer the query. 
-If unsure, state that you don't know. Be concise and factual (max 3 sentences).
+You are an assistant who will answer user query from the given documents. Use the provided context to answer the query. 
+If unsure, state that you don't know. Be concise and factual.
 
 Query: {user_query} 
 Context: {document_context} 
@@ -110,15 +110,13 @@ def generate_answer(user_query, context_documents):
 
 
 # UI Configuration
-
-
-st.title("📘 DocuMind AI")
-st.markdown("### Your Intelligent Document Assistant")
+st.title("📘 Document QnA")
+st.markdown("### Your Document Assistant")
 st.markdown("---")
 
 # File Upload Section
 uploaded_pdf = st.file_uploader(
-    "Upload Research Document (PDF)",
+    "Upload Document (PDF)",
     type="pdf",
     help="Select a PDF document for analysis",
     accept_multiple_files=False
