@@ -26,7 +26,7 @@ This project leverages Llama 3.2 model and Streamlit to create a 100% locally ru
     ```
 This is how it will look :
 
-![image 1](img_1.png)
-![image 2](img_2.png)
-![image 3](img_3.png)
+![image 1](images/img_1.png)
+![image 2](images/img_2.png)
+![image 3](images/img_3.png)
 
